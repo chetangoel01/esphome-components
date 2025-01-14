@@ -80,9 +80,9 @@ void epd_base_init(uint32_t epd_row_width) {
 
   /* Power Control Output/Off */
   gpio_set_direction(CFG_DATA, GPIO_MODE_OUTPUT);
-  gpio_set_direction(CFG_CLK, GPIO_MODE_OUTPUT);
-  gpio_set_direction(CFG_STR, GPIO_MODE_OUTPUT);
-  fast_gpio_set_lo(CFG_STR);
+  // gpio_set_direction(CFG_CLK, GPIO_MODE_OUTPUT);
+  // gpio_set_direction(CFG_STR, GPIO_MODE_OUTPUT);
+  // fast_gpio_set_lo(CFG_STR);
 
   push_cfg(&config_reg);
 
